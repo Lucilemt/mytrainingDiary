@@ -1,0 +1,66 @@
+$main-color:steelblue;
+$secondary-color: orange;
+$link-color: navy;
+$footerbacgroud-color: #f9f9f9;
+
+footer{
+    background-color: $footerbacgroud-color;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.coontainerfooter{
+    display: flex;
+}
+
+.footleft{
+    margin-left: 5%;
+    p{color: rgba(0,0,0,0.65);
+    span{
+        font-weight: bold;
+    }
+  }
+}
+.footright{
+    display: flex;
+    margin-left: 65%;
+    align-items: center;
+    div{
+        a{
+            text-decoration: none;
+            color: rgba(0,0,0,0.65);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        img{
+            margin-left: 4px;
+            height: 16px;
+            width: 16px;
+        }
+    }
+}
+
+/* Le responsive ___________________________________________________________ */
+
+@media (max-width: 640px) {
+    /* CSS mobile ici */
+  
+    .coontainerfooter{
+        display: inline;
+        text-align: center;
+    }
+    
+    .footleft{
+        margin-left: 5%;
+        p{color: rgba(0,0,0,0.65);
+        span{
+            font-weight: bold;
+        }
+      }
+    }
+    .footright{
+        text-align: center;
+        margin-left: 30%;
+       
+    }
+}
